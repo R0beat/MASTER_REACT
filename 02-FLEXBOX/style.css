@@ -1,0 +1,277 @@
+:root {
+    --font: "Urbanist", sans-serif;
+
+    --container: 1200px;
+
+    --letter-spacing: 3px;
+    --fw-100: 100;
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --dark: #1D2021;
+    --light: #FBF1C7;
+    --primary: #98971A;
+    --secondary: #7C6F64;
+    --success: #689D6a;
+    --info: #458588;
+    --warning: #D79921;
+    --danger: #CC241D;
+
+    --dark-light: #3C3836;
+    --light-light: #FAF5E5;
+    --primary-light: #B8BB26;
+    --secondary-light: #CACACA;
+    --success-light: #8EC07C;
+    --info-light: #83A598;
+    --warning-light: #FABD2F;
+    --danger-light: #FB4934;
+
+    --dark-hover: #282828;
+    --light-hover: #EBDBB2;
+    --primary-hover: #79740E;
+    --secondary-hover: #3C3836;
+    --success-hover: #427B58;
+    --info-hover: #076678;
+    --warning-hover: #B57614;
+    --danger-hover: #9D0006;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: var(--font);
+    background-color: var(--light-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: var(--fw-500);
+    letter-spacing: var(--letter-spacing);
+}
+
+.container {
+    border: 1px solid var(--secondary-light);
+    padding: 2px;
+    display: flex;
+    padding: 10px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-1 {
+    gap: 0.25rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-3 {
+    gap: 0.75rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-5 {
+    gap: 1.25rem;
+}
+
+.fd-row {
+    flex-direction: row;
+}
+
+.fd-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.fd-column {
+    flex-direction: column;
+}
+
+.fd-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.f-nowrap {
+    flex-wrap: nowrap;
+}
+
+.f-flow {
+    flex-flow: row wrap;
+}
+
+.f-flow {
+    flex-flow: row wrap-reverse;
+}
+
+.jc-around {
+    justify-content: space-around;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-start {
+    justify-content: start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+.align-content-baseline {
+    align-content: baseline;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-end {
+    align-content: end;
+}
+
+.align-content {
+    align-content: start;
+}
+
+.fg-1 {
+    flex-grow: 1;
+}
+
+.fg-2 {
+    flex-grow: 2;
+}
+
+.fg-3 {
+    flex-grow: 3;
+}
+
+.fg-4 {
+    flex-grow: 4;
+}
+
+.fg-5 {
+    flex-grow: 5;
+}
+
+.fg-6 {
+    flex-grow: 6;
+}
+
+.fg-7 {
+    flex-grow: 7;
+}
+
+.fg-8 {
+    flex-grow: 8;
+}
+
+.fg-9 {
+    flex-grow: 9;
+}
+
+.fg-10 {
+    flex-grow: 10;
+}
+
+.fg-11 {
+    flex-grow: 11;
+}
+
+.fg-12 {
+    flex-grow: 12;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px var(--secondary-light);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 320px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px var(--secondary-light);
+}
+
+.card__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card__body {
+    padding: 1.2rem;
+    color: var(--dark);
+}
+
+.card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card__text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.card__btn {
+    align-self: flex-start;
+    background-color: var(--light);
+    color: var(--dark);
+    border: none;
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card__btn:hover {
+    background-color: darken(var(--dark), 10%);
+}

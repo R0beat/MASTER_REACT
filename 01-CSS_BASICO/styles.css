@@ -1,0 +1,150 @@
+:root {
+  --font: "Urbanist", sans-serif;
+
+  --container: 1200px;
+
+  --letter-spacing: 3px;
+  --fw-100: 100;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --dark: #1D2021;
+  --light: #FBF1C7;
+  --primary: #98971A;
+  --secondary: #7C6F64;
+  --success: #689D6a;
+  --info: #458588;
+  --warning: #D79921;
+  --danger: #CC241D;
+
+  --dark-light: #3C3836;
+  --light-light: #FAF5E5;
+  --primary-light: #B8BB26;
+  --secondary-light: #D3869B;
+  --success-light: #8EC07C;
+  --info-light: #83A598;
+  --warning-light: #FABD2F;
+  --danger-light: #FB4934;
+
+  --dark-hover: #282828;
+  --light-hover: #EBDBB2;
+  --primary-hover: #79740E;
+  --secondary-hover: #3C3836;
+  --success-hover: #427B58;
+  --info-hover: #076678;
+  --warning-hover: #B57614;
+  --danger-hover: #9D0006;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  background-color: var(--light-light);
+}
+
+.container {
+  width: var(--container);
+  margin: 0px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: var(--fw-500);
+  letter-spacing: var(--letter-spacing);
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  color: inherit;
+}
+
+
+.header {
+  background-color: var(--danger-light);
+  height: 100px;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  color: var(--danger-hover);
+  line-height: 100px;
+}
+
+.nav {
+  background-color: var(--info-light);
+  padding: 10px 20px;
+}
+
+.nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin: 2px 10px;
+}
+
+.nav__link {
+  display: block;
+  /* Hace clicable todo el área */
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 4px;
+  border-bottom: solid var(--info-light);
+  transition: all 0.3s;
+}
+
+/* Un hover: el enlace controla color y fondo */
+.nav__link:hover {
+  color: var(--info);
+  border-bottom: solid var(--info-hover);
+}
+
+.article{
+  color: var(--light);
+}
+
+.article__titulo{
+  font-style: italic;
+}
+
+.article__texto{
+  text-align: justify;
+}
+
+.content {
+  width: 70%;
+  background-color: var(--success-light);
+  min-height: 500px;
+  padding: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.aside {
+  width: 20%;
+  background-color: var(--warning-light);
+  min-width: 500px;
+  padding: 10px;
+}
+
+.footer{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--light);
+  background-color: var(--dark-light);
+}
