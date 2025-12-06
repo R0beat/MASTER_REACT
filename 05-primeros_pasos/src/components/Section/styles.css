@@ -1,0 +1,76 @@
+.section {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 16px;
+}
+
+.section__title {
+    font-size: 1.4rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.section__content {
+    font-size: 1rem;
+    color: #666;
+}
+
+.section__hr {
+    border: 0;
+    height: 3px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+.section--primary {
+    background: linear-gradient(to right, var(--primary), var(--color-primary));
+}
+
+.section--secondary {
+    background: linear-gradient(to right, var(--secondary), var(--color-secondary));
+}
+
+.section--success {
+    background: linear-gradient(to right, var(--success), var(--color-success));
+}
+
+.section--info {
+    background: linear-gradient(to right, var(--info), var(--color-info));
+}
+
+.section--warning {
+    background: linear-gradient(to right, var(--warning), var(--color-warning));
+}
+
+.section--danger {
+    background: linear-gradient(to right, var(--danger), var(--color-danger));
+}
+
+.section--dark {
+    background: linear-gradient(to right, var(--dark), var(--color-dark));
+}
+
+.section--light {
+    background: linear-gradient(to right, var(--light), var(--color-light));
+}
+
+.section--gray {
+    background: linear-gradient(to right, var(--gray), var(--color-gray));
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .section {
+        padding: 12px;
+    }
+
+    .section__title {
+        font-size: 1.2rem;
+    }
+
+    .section__content {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,203 @@
+.btn,
+.shine {
+    position: relative;
+    overflow: hidden;
+    padding: 0.85em 1em;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    transition: transform 0.2s ease;
+}
+
+.shine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-25deg);
+}
+
+.shine:hover {
+    transform: scale(1.05);
+}
+
+.shine:hover::before {
+    animation: shine 1s ease forwards;
+}
+
+@keyframes shine {
+    0% {
+        left: -75px;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+.btn--primary {
+    background-color: var(--border-color-primary);
+    color: var(--light);
+}
+
+.btn--primary:hover {
+    background-color: var(--color-primary);
+    color: var(--bg-alert-primary);
+}
+
+.btn--secondary {
+    background-color: var(--border-color-secondary);
+    color: var(--light);
+}
+
+.btn--secondary:hover {
+    background-color: var(--color-secondary);
+    color: var(--bg-alert-secondary);
+}
+
+.btn--info {
+    background-color: var(--border-color-info);
+    color: var(--light);
+}
+
+.btn--info:hover {
+    background-color: var(--color-info);
+    color: var(--bg-alert-info);
+}
+
+.btn--success {
+    background-color: var(--border-color-success);
+    color: var(--light);
+}
+
+.btn--success:hover {
+    background-color: var(--color-success);
+    color: var(--bg-alert-success);
+}
+
+.btn--danger {
+    background-color: var(--border-color-danger);
+    color: var(--light);
+}
+
+.btn--danger:hover {
+    background-color: var(--color-danger);
+    color: var(--bg-alert-danger);
+}
+
+.btn--warning {
+    background-color: var(--border-color-warning);
+    color: var(--light);
+}
+
+.btn--warning:hover {
+    background-color: var(--color-warning);
+    color: var(--bg-alert-warning);
+}
+
+.btn--dark {
+    background-color: var(--border-color-dark);
+    color: var(--light);
+}
+
+.btn--dark:hover {
+    background-color: var(--color-dark);
+    color: var(--bg-alert-dark);
+}
+
+.btn--light {
+    background-color: var(--border-color-light);
+    color: var(--light);
+}
+
+.btn--light:hover {
+    background-color: var(--color-light);
+    color: var(--bg-alert-success);
+}
+
+.btn--gray {
+    background-color: var(--border-color-gray);
+    color: var(--gray);
+}
+
+.btn--gray:hover {
+    background-color: var(--color-gray);
+    color: var(--bg-alert-gray);
+}
+
+.shine--primary {
+    color: var(--color-primary);
+    background: linear-gradient(45deg, var(--border-color-primary), var(--bg-primary));
+}
+
+.shine--secondary {
+    background: linear-gradient(45deg, var(--secondary), var(--secondary-hover));
+}
+
+.shine--success {
+    background: linear-gradient(45deg, var(--success), var(--success-hover));
+}
+
+.shine--info {
+    background: linear-gradient(45deg, var(--info), var(--info-hover));
+}
+
+.shine--warning {
+    background: linear-gradient(45deg, var(--warning), var(--warning-hover));
+}
+
+.shine--danger {
+    background: linear-gradient(45deg, var(--danger), var(--danger-hover));
+}
+
+.shine--dark {
+    background: linear-gradient(45deg, var(--dark), var(--dark-hover));
+}
+
+.shine--primary-outline {
+    color: var(--primary);
+    border: solid var(--primary-hover);
+}
+
+.shine--secondary-outline {
+    color: var(--secondary);
+    border: solid var(--secondary-hover);
+}
+
+.shine--success-outline {
+    color: var(--success);
+    border: solid var(--success-hover);
+}
+
+.shine--info-outline {
+    color: var(--info);
+    border: solid var(--info-hover);
+    ;
+}
+
+.shine--warning-outline {
+    color: var(--warning);
+    border: var(--warning-hover);
+}
+
+.shine--danger-outline {
+    color: var(--danger);
+    border: var(--danger-hover);
+}
+
+.shine--dark-outline {
+    color: var(--dark);
+    border: var(--dark-hover);
+}
+
+.expanded {
+    width: 100%;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

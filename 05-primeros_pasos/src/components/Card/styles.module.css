@@ -1,0 +1,18 @@
+.card {
+  width: 100%;
+  max-width: 100%;
+  padding: 40px;
+  box-shadow: 2px 2px 10px #ddd;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+
+.card.primary{ background-color: var(--bg-primary);}
+.card.secondary{ background-color: var(--bg-secondary);}
+.card.success{ background-color: var(--bg-success);}
+.card.warning{ background-color: var(--bg-warning);}
+.card.danger{ background-color: var(--bg-danger);}
+.card.info{ background-color: var(--bg-info);}
+.card.light{ background-color: var(--bg-light);}
+.card.dark{ background-color: var(--bg-dark);}
+.card.gray{ background-color: var(--bg-gray);}
