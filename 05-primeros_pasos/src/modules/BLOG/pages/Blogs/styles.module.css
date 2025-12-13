@@ -1,0 +1,13 @@
+.news{
+    display: grid;
+}
+
+.news__container{
+    background-color: var( --bg-alert-light);
+    padding: 0 50px 40px;
+}
+
+.news__img{
+    background-color: var( --bg-alert-light);
+    padding: 0 50px 40px;
+}

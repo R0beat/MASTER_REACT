@@ -1,49 +1,59 @@
 .alert {
   padding: 25px;
 }
-
-.alert.primary{ 
-  background-color: var(--bg-alert-primary);
-  color: var(--color-primary);
-  border: 1px solid var(--border-color-primary);
+.alert.default{ 
+  background-color: var(--rgb-night);
+  color: var(--rgb-night);
+  border: 1px solid var(--night);
 }
 .alert.secondary{ 
   background-color: var(--bg-alert-secondary);
-  color: var(--color-secondary);
-  border: 1px solid var(--border-color-secondary);
+  color: var(--rgb-secondary);
+  border: 1px solid var(--border-secondary);
+}
+
+.alert.primary{ 
+  background-color: var(--bg-alert-primary);
+  color: var(--rgb-primary);
+  border: 1px solid var(--border-primary);
+}
+.alert.secondary{ 
+  background-color: var(--bg-alert-secondary);
+  color: var(--rgb-secondary);
+  border: 1px solid var(--border-secondary);
 }
 .alert.success{ 
   background-color: var(--bg-alert-success);
-  color: var(--color-success);
-  border: 1px solid var(--border-color-success);
+  color: var(--rgb-success);
+  border: 1px solid var(--border-success);
 }
 .alert.warning{ 
   background-color: var(--bg-alert-warning);
-  color: var(--color-warning);
-  border: 1px solid var(--border-color-warning);
+  color: var(--rgb-warning);
+  border: 1px solid var(--border-warning);
 }
 .alert.danger{ 
   background-color: var(--bg-alert-danger);
-  color: var(--color-danger);
-  border: 1px solid var(--border-color-danger);
+  color: var(--rgb-danger);
+  border: 1px solid var(--border-danger);
 }
 .alert.info{ 
   background-color: var(--bg-alert-info);
-  color: var(--color-info);
-  border: 1px solid var(--border-color-info);
+  color: var(--rgb-info);
+  border: 1px solid var(--border-info);
 }
 .alert.light{ 
   background-color: var(--bg-alert-light);
-  color: var(--color-light);
-  border: 1px solid var(--border-color-light);
+  color: var(--rgb-light);
+  border: 1px solid var(--border-light);
 }
 .alert.dark{ 
   background-color: var(--bg-alert-dark);
-  color: var(--color-dark);
-  border: 1px solid var(--border-color-dark);
+  color: var(--rgb-dark);
+  border: 1px solid var(--border-dark);
 }
 .alert.gray{ 
   background-color: var(--bg-alert-gray);
-  color: var(--color-gray);
-  border: 1px solid var(--border-color-gray);
+  color: var(--rgb-gray);
+  border: 1px solid var(--border-gray);
 }

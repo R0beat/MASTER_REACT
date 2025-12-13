@@ -1,14 +1,15 @@
 import React from 'react'
 import Styles from './styles.module.css';
 
-export const Button = ({ element = 'btn', modifier = 'btn--primary', className = '', type = 'button', children, onClick = null, expanded = false, disabled = false }) => {
+export const Button = ({  variant = 'btn-default', modifier = '', className = '', type = 'button', children, onClick = null, expanded = false, disabled = false }) => {
 
     return (
         <button
-            className={`${Styles[element]} ${Styles[modifier]} ${expanded && `${Styles['expanded']}`} ${(disabled && `${Styles['disabled']}`)} ${className}`}
+            className={`${Styles['btn']} ${Styles[variant]} ${Styles[modifier]} ${expanded && `${Styles['expanded']}`} ${(disabled && `${Styles['disabled']}`)} ${className}`}
             type={type}
             onClick={onClick}
-            disabled={disabled}>
+            disabled={disabled}
+            >
             {children}
         </button>
     )

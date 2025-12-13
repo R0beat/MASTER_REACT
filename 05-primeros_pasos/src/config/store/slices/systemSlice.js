@@ -18,10 +18,6 @@ const systemSlice = createSlice({
             state.styleApp = action.payload;
             localStorage.setItem("styleApp", action.payload);
         },
-        toggleStyleApp: (state) => {
-            state.styleApp = state.styleApp === "0" ? "1" : "0";
-            localStorage.setItem("styleApp", state.styleApp);
-        },
         setLoadingGeneral: (state, action) => {
             const { show, message } = action.payload;
             state.loadingGeneral = show;
@@ -40,5 +36,5 @@ const systemSlice = createSlice({
     }
 });
 
-export const { setStyleApp, setLoadingGeneral, getError, clearError, setNivelDeAcceso, toggleStyleApp } = systemSlice.actions;
+export const { setStyleApp, setLoadingGeneral, getError, clearError, setNivelDeAcceso} = systemSlice.actions;
 export default systemSlice.reducer;

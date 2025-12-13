@@ -1,6 +1,6 @@
 :root {
   --fuente: "Work Sans", sans-serif;
-  --ancho-contendor: 1200px;
+  --ancho-contenedor: 1200px;
   --font-size: 16px;
 
   --letter-spacing: 3px;
@@ -28,7 +28,7 @@
   --bg-danger: #f89291;
   --bg-warning: #f8fa95;
   --bg-info: #217dc1;
-  --bg-light: #fafafa;
+  --bg-light: #f5f5f5;
   --bg-dark: #282828;
   --bg-gray: #bdbdbd;
 
@@ -38,7 +38,7 @@
   --border-color-danger: #df0017;
   --border-color-warning: #ffd100;
   --border-color-info: #1b5d9e;
-  --border-color-light: #bdbdbd;
+  --border-color-light: #e5e5e5;
   --border-color-dark: #5b5654;
   --border-color-gray: #757575;
 
@@ -48,17 +48,17 @@
   --color-danger: #fa3a3d;
   --color-warning: #fdc025;
   --color-info: #207cc1;
-  --color-light: #bdbdbd;
+  --color-light: #f4f4f4;
   --color-dark: #282828;
   --color-gray: #9e9e9e;
-  
+
   --bg-alert-primary: #dffbfb;
   --bg-alert-secondary: #efe5fd;
   --bg-alert-success: #f2fde4;
   --bg-alert-danger: #ffe9ec;
   --bg-alert-warning: #fef7c1;
   --bg-alert-info: #b6e7fe;
-  --bg-alert-light: #f5f5f5;
+  --bg-alert-light: #eeeeee;
   --bg-alert-dark: #96928f;
   --bg-alert-gray: #f5f5f5;
 }

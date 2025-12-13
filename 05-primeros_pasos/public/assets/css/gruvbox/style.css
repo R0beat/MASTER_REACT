@@ -1,6 +1,6 @@
 :root {
   --fuente: "Work Sans", sans-serif;
-  --ancho-contendor: 1200px;
+  --ancho-contenedor: 1200px;
   --font-size: 16px;
 
   --letter-spacing: 3px;
@@ -61,5 +61,4 @@
   --bg-alert-light: #fdfae8;
   --bg-alert-dark: #ebe6e4;
   --bg-alert-gray: #e9dad4;
-
 }

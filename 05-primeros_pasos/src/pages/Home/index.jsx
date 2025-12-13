@@ -5,15 +5,15 @@ import './style.css';
 
 export const Home = () => {
     return (
-        <main className='home'>
+        <div className='home'>
             <section className='home__section'>
                 <p className="home__text">Bienvenidos a mi blog, conoceras parte de m&#237;</p>
-                <div>
-                    <Button element='shine' modifier='shine--info-outline' expanded={true}>
-                        <Link to={'#'}>Entra ya</Link>
+                <div className="span-12 span-md-3">
+                    <Button element='shine' modifier='shine--light-outline' >
+                        <Link to={'/blogs'}>Entra ya</Link>
                     </Button>
                 </div>
             </section>
-        </main>
+        </div>
     )
 }

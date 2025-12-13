@@ -1,0 +1,66 @@
+:root {
+    --radius: 0.5rem;
+    --max-width: 1200px;
+    --fuente: "Quicksand", sans-serif;
+    --fuente-titulo: "PT Serif", serif;
+    --ancho-contenedor: 1200px;
+    --font-size: 16px;
+
+    --letter-spacing: 3px;
+    --fw-100: 100;
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --bg-main: #0c0b0b;
+    --bg-surface: #151010;
+
+    --primary: #8b1e1e; /* rojo imperial */
+    --secondary:#6f5b3e; /* bronce */
+    --danger: #b3261e; /* sangre */
+    --success: #4a7a3c; /* victoria */
+    --info: #5a6f8f; /* acero */
+    --light: #f2e9dc; /* mármol */
+    --dark: #0c0b0b; /* obsidiana */
+    --night: #1a1f28;
+
+    --rgb-primary: #8b1e1e66; /* rojo imperial */
+    --rgb-secondary:#6f5b3e66; /* bronce */
+    --rgb-danger: #b3261e66; /* sangre */
+    --rgb-success: #4a7a3c66; /* victoria */
+    --rgb-info: #5a6f8f66; /* acero */
+    --rgb-light: #f2e9dc66; /* mármol */
+    --rgb-dark: #0c0b0b; /* obsidiana */
+    --rgb-night: #1a1f2866;
+
+    --color-muted: #6b6256;
+    --color-heading: #1a1616;
+    --color-body: #2e2929;
+
+    --border-primary: #741818;
+    --border-secondary: #5c4b32;
+    --border-danger: #8f1f19;
+    --border-success: #3b612f;
+    --border-info: #495b76;
+    --border-light: #ddd2c2;
+    --border-dark: #1a1818;
+
+    --border-default: #d0c6b7;
+
+    --bg-primary: #8b1e1e;
+    --bg-secondary: #6f5b3e;
+    --bg-danger: #b3261e;
+    --bg-success: #4a7a3c;
+    --bg-info: #5a6f8f;
+    --bg-light: #f2e9dc;
+    --bg-dark: #0c0b0b;
+
+    --bg-alert-primary: #f1d7d7;
+    --bg-alert-secondary: #e8e1d4;
+    --bg-alert-danger: #f5d6d3;
+    --bg-alert-success: #dfead9;
+    --bg-alert-info: #e2e7f0;
+}

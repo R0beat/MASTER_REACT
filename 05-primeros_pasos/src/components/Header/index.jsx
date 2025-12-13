@@ -15,7 +15,7 @@ export const Header = () => {
     return (
         <header>
             <nav className='nav'>
-                <ThemeToggle />
+               
                 <Link className='nav__link'  to='/'></Link>
                 <div className='nav__right'>
                     <a className='nav__profile' href=""></a>
@@ -25,6 +25,7 @@ export const Header = () => {
                                 <a key={i} href={link}><span className={`${icon} media__icon`}></span></a>
                             ))
                         }
+                         <ThemeToggle />
                     </div>
                 </div>
             </nav>
