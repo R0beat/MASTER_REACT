@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import Styles from './styles.module.css';
 import { setStyleApp } from "../../config/store/slices/systemSlice";
 
 export const ThemeToggle = () => {
@@ -11,18 +12,18 @@ export const ThemeToggle = () => {
     };
 
     return (
-        <>
-            <label htmlFor="theme-select">Tema</label>
+        <div className={Styles["ac-theme-toggle"]}>
+            <label htmlFor="theme-select" className="ac-label">
+                Tema
+            </label>
 
-            <select
-                id="theme-select"
-                value={styleApp}
-                onChange={handleChange}
-            >
-                <option value="0">Florencia</option>
-                <option value="1">Roma</option>
-                <option value="2">Venecia</option>
-            </select>
-        </>
+            <div className={Styles["ac-select-wrapper"]}>
+                <select id="theme-select" value={styleApp} onChange={handleChange} className={Styles["ac-select"]}>
+                    <option className="ac-select-option " value="0">Florencia</option>
+                    <option className="ac-select-option " value="1">Roma</option>
+                    <option className="ac-select-option " value="2">Venecia</option>
+                </select>
+            </div>
+        </div>
     );
 };

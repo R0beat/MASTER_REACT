@@ -1,0 +1,54 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+.hero__background {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+.hero__content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+.hero__content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+
+.hero__content button {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+.parallax {
+  height: 100vh;
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax__overlay {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.parallax__text {
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.parallax__content {
+  height: 50vh;
+  background: linear-gradient(357deg, var(--night) 0%, var(--primary)100%);
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .parallax {
+    height: 65vh;
+  }
+
+  .parallax__background {
+    top: -40vh;
+    height: 120%;
+  }
+
+  .parallax__overlay {
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.08) 35%,
+        rgba(0, 0, 0, 0.08) 65%,
+        rgba(0, 0, 0, 0.2) 100%);
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  .parallax__content {
+    padding: 0 1rem;
+  }
+
+  .parallax__content h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+}

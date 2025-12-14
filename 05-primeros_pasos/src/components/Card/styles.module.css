@@ -1,22 +1,13 @@
 .card {
   position: relative;
-
-  /* Fondo totalmente transparente */
-  background: rgba(255, 255, 255, 0);
-
-  /* Efecto glass */
-  backdrop-filter: blur(14px) saturate(120%);
-  -webkit-backdrop-filter: blur(14px) saturate(120%);
-
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
-
-  /* Sombra externa + brillo interno */
-  box-shadow:
-    0 16px 30px -12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 16px 30px -12px rgba(0, 0, 0, 0.35);
   overflow: hidden;
 }
-
 
 .card::before {
   content: "";

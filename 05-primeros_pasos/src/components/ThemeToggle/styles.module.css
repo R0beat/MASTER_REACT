@@ -1,0 +1,71 @@
+.ac-theme-toggle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: "Cinzel", serif; /* si quieres, opcional */
+
+}
+
+.ac-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--bg-alert-primary);
+}
+
+/* contenedor del select */
+.ac-select-wrapper {
+    position: relative;
+    width: 180px;
+}
+
+/* select base */
+.ac-select {
+    width: 100%;
+    padding: 10px 14px;
+    background: rgba(15, 18, 22, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    color: #e5e5e5;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+
+    transition: 
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+/* hover */
+.ac-select:hover {
+    border-color: var(--rgb-primary);
+}
+
+/* focus tipo Animus */
+.ac-select:focus {
+    border-color: var(--border-primary);
+    box-shadow: 0 0 0 1px var(--rgb-primary);
+}
+
+/* flecha personalizada */
+.ac-select-wrapper::after {
+    content: "▾";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    pointer-events: none;
+    font-size: 0.8rem;
+}
+
+/* opciones */
+.ac-select-option {
+    background: #0f1216;
+    color: #e5e5e5;
+}
