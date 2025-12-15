@@ -5,7 +5,7 @@ export const Button = ({  variant = 'btn-default', modifier = '', className = ''
 
     return (
         <button
-            className={`${Styles['btn']} ${Styles[variant]} ${Styles[modifier]} ${expanded && `${Styles['expanded']}`} ${(disabled && `${Styles['disabled']}`)} ${className}`}
+            className={`${Styles['btn']} ${Styles[`btn-${variant}`]} ${Styles[modifier]} ${expanded && `${Styles['expanded']}`} ${(disabled && `${Styles['disabled']}`)} ${className}`}
             type={type}
             onClick={onClick}
             disabled={disabled}

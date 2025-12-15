@@ -1,9 +1,8 @@
 :root {
     --radius: 0.5rem;
-    --max-width: 1200px;
     --fuente: "Quicksand", sans-serif;
     --fuente-titulo: "PT Serif", serif;
-    --ancho-contenedor: 1200px;
+    --ancho-contenedor: 1600px;
     --font-size: 16px;
 
     --letter-spacing: 3px;

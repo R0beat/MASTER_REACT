@@ -1,24 +1,20 @@
 import React from 'react';
-import { Button, Card, Hero,Section } from '../../../../components';
+import { Button, Card, CardBlog, Hero, Section } from '../../../../components';
 import { Link } from 'react-router-dom';
 import Styles from './styles.module.css';
-import { BlogCard } from '../../../../components/BlogCard';
-import { Navbar } from '../../../../components/Navbar';
+import { HeroDiagonal } from '../../../../components/HeroDiagonal';
+
 
 export const Blogs = () => {
     return (
-        <> 
-            <Hero className={'container'}>
-                <h1>Bienvenido a mi plataforma</h1>
-                <p>Aprende, crece y lleva tus habilidades al siguiente nivel</p>
-               <Button variant='btn-primary-outline'>Comenzar ahora</Button>
-            </Hero>
-            <BlogCard
+        <>
+            <CardBlog
                 title='T&#237;tulo del blog'
                 text=' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ea tempora, dolorem veritatis quae laborum nesciunt.
                         Minima, necessitatibus vel dolores architecto repellat fugiat obcaecati velit nostrum totam! Repudiandae, deserunt nesciunt.'
-                variant={'danger'} />
-            <div className='container'>
+                variant={'primary'}
+                className={'container mt-2'} />
+            {/* <div className='container'>
                 <section className='d-grid col-12 gap-3'>
                     <Card className={'span-12 span-md-4 mt-2'}>
                         <article className={Styles['posts__container']}>
@@ -87,7 +83,7 @@ export const Blogs = () => {
                         </article>
                     </Card>
                 </section>
-            </div>
+            </div> */}
         </>
     )
 }

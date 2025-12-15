@@ -33,15 +33,44 @@ a{
 
 /* CONTAINERS – MOBILE FIRST */
 .container {
-  width: 100%;
-  max-width: var(--ancho-contenedor);
-  margin: auto;
-  padding: 0 1.25rem;
+  max-width: 95%;
+  width: var(--ancho-contenedor);
+  margin: 20px auto;
+  overflow: hidden;
 }
 
 .container-fluid {
   width: 100%;
-  padding: 0 1.25rem;
+  padding: 0 10px;
+  margin: 20px auto;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  clear: both;
+  max-width: 62.5rem;
+  height: 0;
+  margin: 1.25rem auto;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--border-default);
+  border-left: 0;
+}
+
+.hr-header {
+  margin: 30px 0;
+  position: relative;
+}
+
+.hr-header:before {
+  content: " ";
+  width: 20%;
+  height: 2px;
+  background-color: var(--primary);
+  position: absolute;
 }
 
 /* GRID BASE – MOBILE FIRST */
@@ -49,6 +78,26 @@ a{
 .mt-1{margin-top:  1rem}
 .mt-2{margin-top:  1.5rem}
 .mt-3{margin-top:  2rem}
+
+.margin-vertical-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.margin-vertical-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.margin-vertical-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.margin-vertical-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 
 /* GRID BASE – MOBILE FIRST */
 .d-grid { display: grid; }
