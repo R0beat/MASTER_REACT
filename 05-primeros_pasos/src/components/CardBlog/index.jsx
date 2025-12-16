@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from './styles.module.css';
 import { Button } from '../Button';
-import { Parallax } from '../Parallax';
+
 export const CardBlog = (
     { category = 'Noticias',
         title = 'Título del Blogpost',
@@ -10,7 +10,6 @@ export const CardBlog = (
         onReadMore,
         className,
         variant = 'primary' }) => {
-        console.log(variant)
     return (
         <section className={`d-grid col-12 gap-2 ${Styles['blog-card']} ${className}`}>
             <div className={`span-12 span-md-8 ${Styles['blog-card__media']}`}>

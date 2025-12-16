@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '/assets/img/svg/blog.svg';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ThemeToggle } from '../ThemeToggle';
+import { GiFireZone } from "react-icons/gi";
 
 export const Navbar = ({ rutas = [] }) => {
     const [open, setOpen] = useState(false);
@@ -14,7 +15,8 @@ export const Navbar = ({ rutas = [] }) => {
         <header className={Styles['nav']}>
             <div className={Styles['nav__container']}>
                 {/* Logo */}
-                <img className={Styles['nav__logo']} src={Logo} alt="Assassin's Creed" />
+                <GiFireZone className={Styles['nav__logo']} />
+                {/* <img  src={Logo} alt="Assassin's Creed" /> */}
                 {/* Menu */}
                 <nav className={`${Styles['menu']} ${open ? Styles.active : ""}`}>
                     {

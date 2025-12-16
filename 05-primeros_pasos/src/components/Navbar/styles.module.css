@@ -21,6 +21,8 @@
 /* Logo */
 .nav__logo {
     height: 32px;
+    color: var(--primary);
+    font-size: 40px;
 }
 
 /* Menu desktop */

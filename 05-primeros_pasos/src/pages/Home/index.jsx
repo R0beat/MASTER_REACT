@@ -9,7 +9,7 @@ export const Home = () => {
             <section className='home__section'>
                 <p className="home__text">Bienvenidos a mi blog, conoceras parte de m&#237;</p>
                 <div className="span-12 span-md-3">
-                    <Button element='shine' modifier='shine--light-outline' >
+                    <Button variant='primary'>
                         <Link to={'/blogs'}>Entra ya</Link>
                     </Button>
                 </div>
