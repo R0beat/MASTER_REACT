@@ -1,0 +1,183 @@
+/* =========================
+   Base
+========================= */
+.form {
+    font-family: var(--fuente);
+    color: var(--color-body);
+}
+
+/* =========================
+   Group
+========================= */
+.form__group {
+    border: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.form__groupTitle {
+    font-family: var(--fuente-titulo);
+    font-weight: var(--fw-600);
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   Field
+========================= */
+.form__field {
+    position: relative;
+    margin-bottom: 1.75rem;
+}
+
+.form__field--error .form__input {
+    border-color: var(--border-danger);
+    box-shadow: 0 0 0 3px var(--rgb-danger);
+}
+
+.form__field--error .form__label {
+    color: var(--danger);
+}
+
+/* =========================
+   Input
+========================= */
+.form__input {
+    width: 100%;
+    padding: 1rem 0.6rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--color-body);
+    background-color: var(--light);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius);
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.form__input:hover {
+    border-color: var(--border-secondary);
+}
+
+.form__input:focus {
+    border-color: var(--border-primary);
+    box-shadow: 0 0 0 3px var(--rgb-primary);
+}
+
+/* =========================
+   Floating label
+========================= */
+.form__label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    pointer-events: none;
+    background-color: var(--light);
+    padding: 0 0.3rem;
+    transition: 0.25s ease;
+}
+
+.form__input:focus+.form__label,
+.form__input:not(:placeholder-shown)+.form__label,
+.form__select:focus+.form__label {
+    top: 0.35rem;
+    font-size: 0.7rem;
+    color: var(--primary);
+}
+
+/* =========================
+   Textarea
+========================= */
+.form__textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* =========================
+   Select
+========================= */
+.form__select {
+    appearance: none;
+    cursor: pointer;
+}
+
+/* =========================
+   Dropdown (searchable)
+========================= */
+.form__dropdown {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: var(--light);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius);
+    margin-top: 0.3rem;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.form__option {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+.form__option:hover {
+    background: var(--bg-alert-primary);
+}
+
+.form__noResults {
+    padding: 0.75rem;
+    color: var(--color-muted);
+}
+
+/* =========================
+   Message
+========================= */
+.form__message {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+    color: var(--danger);
+}
+
+/* =========================
+   File input
+========================= */
+.form__file {
+    margin-bottom: 2rem;
+}
+
+.form__fileDrop {
+    padding: 2rem;
+    border: 2px dashed var(--border-secondary);
+    border-radius: var(--radius);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s ease;
+    background: var(--bg-alert-secondary);
+}
+
+.form__fileDrop:hover {
+    border-color: var(--border-primary);
+    background: var(--bg-alert-primary);
+}
+
+.form__fileList {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+/* =========================
+   Error feedback
+========================= */
+.form__errorFeedback {
+    padding: 1rem;
+    background: var(--bg-alert-danger);
+    border: 1px solid var(--border-danger);
+    border-radius: var(--radius);
+    color: var(--danger);
+}

@@ -5,6 +5,7 @@ export * from './Card';
 export * from './CardBlog';
 export * from './DropButton';
 export * from './Footer';
+export * from './Form';
 export * from './Header';
 export * from './Hero';
 export * from './Layout';

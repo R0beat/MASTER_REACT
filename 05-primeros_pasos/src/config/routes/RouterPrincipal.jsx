@@ -7,6 +7,7 @@ import { Plantilla } from "../../pages/Plantilla";
 import { Layout } from "../../components";
 import { Home, NotFound } from "../../pages";
 import { Blogs } from "../../modules/BLOG/pages/Blogs";
+import { Eventos } from "../../modules/REACT/pages/Eventos";
 
 const THEMES = {
     "0": "/assets/css/florencia/style.css",
@@ -40,6 +41,7 @@ export const RouterPrincipal = () => {
                     <Route path="/react" element={<Conceptos />} />
                     <Route path="/plantilla" element={<Plantilla />} />
                     <Route path="/blogs" element={<Blogs />} />
+                    <Route path="/eventos" element={<Eventos />} />
                 </Route>
 
                 {/* Rutas sin Layout */}

@@ -6,6 +6,7 @@ const rutas = [
     { ruta: "/", nombreRuta: "Inicio" },
     { ruta: "/blogs", nombreRuta: "Blog" },
     { ruta: "/plantilla", nombreRuta: "Plantilla" },
+    { ruta: "/eventos", nombreRuta: "React" },
 ]
 
 export const Header = () => {

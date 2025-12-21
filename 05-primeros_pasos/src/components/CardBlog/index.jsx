@@ -1,13 +1,13 @@
 import React from 'react'
 import Styles from './styles.module.css';
 import { Button } from '../Button';
-
+import cardImg from '/assets/img/jpg/react.jpg';
 export const CardBlog = (
     { category = 'Noticias',
         title = 'Título del Blogpost',
         text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore itaque placeat fugiat unde a similique ipsa, temporibus quisquam doloribus deleniti optio numquam.',
-        image = 'https://picsum.photos/600/400',
-        onReadMore,
+        image = cardImg,
+        children,
         className,
         variant = 'primary' }) => {
     return (
@@ -20,7 +20,7 @@ export const CardBlog = (
                 <h2 className={`${Styles['blog-card__title']}`} >{title}</h2>
                 <hr className='hr-header ' />
                 <p className={`${Styles['blog-card__text']} text-justify`}>{text}</p>
-                <Button variant={variant}>Saber m&#225;s</Button>
+                {children}
             </div>
         </section>
     )
