@@ -1,115 +1,197 @@
-.nav {
-    width: 100%;
-    background: #1e242b;
-    border-bottom: 1px solid rgba(255, 255, 255, .08);
+/* ================= HEADER ================= */
+.header {
     position: fixed;
     top: 0;
+    width: 100%;
+    background: #0f172a;
     z-index: 1000;
 }
 
-.nav__container {
-    max-width: 1400px;
+.header__container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
-
+    padding: 0 1.5rem;
     height: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Logo */
-.nav__logo {
-    height: 32px;
-    color: var(--primary);
-    font-size: 40px;
-}
-
-/* Menu desktop */
-.menu {
-    display: flex;
-    gap: 28px;
-}
-
-.menu__link {
-    color: var(--bg-alert-primary);
+/* ================= LOGO ================= */
+.header__logo a {
+    color: var(--rgb-primary-4);
+    font-size: 1.4rem;
+    font-weight: 600;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
+}
+
+.color--logo {
+    color: var(--primary);
+    border-radius: 50%;
+    background-image: linear-gradient( var(--rgb-night-8),var(--border-primary));
+    font-size: 40px;
+    padding: 2px;
+    box-shadow: 0 5px 19px var(--rgb-primary-8);
+}
+
+/* ================= TOGGLE ================= */
+.header__toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end
+}
+
+/* ================= NAV ================= */
+.nav {
+    position: absolute;
+    top: 68px;
+    margin-top: -5px;
+    left: 0;
+    width: 100%;
+    background: var(--rgb-primary-8);
+    transform: translatex(-120%);
+    transition: transform 0.3s ease;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav--open {
+    transform: translateY(0);
+}
+
+.nav__list {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* ================= ITEM ================= */
+.nav__item {
     position: relative;
 }
 
-.menu__link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: var(--primary);
-    transition: width .2s ease;
-}
-
-.menu__link:hover::after,
-.menu__link.active::after {
-    width: 100%;
-}
-
-/* Actions */
-.actions {
+/* ================= LINKS (NORMALIZADOS) ================= */
+.nav__link {
+    all: unset;
+    /* 🔑 elimina diferencias entre <a> y <button> */
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 0.35rem;
+    border-bottom: 1px solid transparent;
+    padding: 0.5rem 0;
+    color: var(--rgb-primary-8);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s ease, background 0.2s ease;
 }
 
-
-/* Hamburger */
-.toggle {
-    display: none;
-    font-size: 22px;
-    background: none;
-    border: none;
-    color: var(--primary);
+/* ===== HOVER SUTIL PARA TODOS ===== */
+.nav__link:hover {
+    color: var(--bg-alert-primary);
+    border-bottom: 1px solid var(--border-primary);
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .menu {
-        position: fixed;
-        top: 64px;
-        left: 0;
-        width: 100%;
-        height: calc(100vh - 64px);
+/* ===== FOCUS (accesibilidad) ===== */
+.nav__link:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+}
 
-        background: rgba(30, 36, 43, 0.95);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+/* ================= ARROW ================= */
+.nav__arrow {
+    font-size: 0.65rem;
+    opacity: 0.7;
+    transform: translateY(1px);
+    transition: transform 0.2s ease;
+}
 
-        flex-direction: column;
+.nav__arrow--open {
+    transform: translateY(1px) rotate(180deg);
+}
+
+/* ================= SUBMENU ================= */
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    color: var(--rgb-primary-4);
+    background: var(--rgb-secondary-8);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.submenu--open {
+    max-height: 300px;
+    opacity: 1;
+}
+
+/* ================= SUBMENU LINKS ================= */
+.submenu__link {
+    display: block;
+    padding: 0.4rem 0.5rem;
+    color: #cbd5f5;
+    font-size: 0.95rem;
+    font-weight: 400;
+    border-radius: 0.375rem;
+    text-decoration: none;
+
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* ===== HOVER SUTIL SUBMENU ===== */
+.submenu__link:hover {
+    color: var(--danger);
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 768px) {
+    .header__toggle {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        transform: none;
+        background: none;
+        width: auto;
+    }
+
+    .nav__list {
+        display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 28px;
-
-        /* ESTADO CERRADO */
-        opacity: 0;
-        transform: translateY(-10px);
-        visibility: hidden;
-        pointer-events: none;
-
-        transition:
-            opacity .25s ease,
-            transform .25s ease;
+        gap: 2rem;
+        padding: 0;
     }
 
-    .menu.active {
-        /* ESTADO ABIERTO */
+    .nav__item {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Dropdown */
+    .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 160px;
+        max-height: none;
         opacity: 1;
-        transform: translateY(0);
-        visibility: visible;
-        pointer-events: auto;
+        display: none;
     }
 
-    .toggle {
+    .nav__item:hover .submenu {
         display: block;
     }
 }

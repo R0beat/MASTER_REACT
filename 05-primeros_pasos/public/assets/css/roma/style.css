@@ -26,14 +26,23 @@
     --dark: #0c0b0b; /* obsidiana */
     --night: #1a1f28;
 
-    --rgb-primary: #8b1e1e66; /* rojo imperial */
-    --rgb-secondary:#6f5b3e66; /* bronce */
-    --rgb-danger: #b3261e66; /* sangre */
-    --rgb-success: #4a7a3c66; /* victoria */
-    --rgb-info: #5a6f8f66; /* acero */
-    --rgb-light: #f2e9dc66; /* mármol */
-    --rgb-dark: #0c0b0b; /* obsidiana */
-    --rgb-night: #1a1f2866;
+    --rgb-primary-4: #8b1e1e66; /* rojo imperial */
+    --rgb-secondary-4:#6f5b3e66; /* bronce */
+    --rgb-danger-4: #b3261e66; /* sangre */
+    --rgb-success-4: #4a7a3c66; /* victoria */
+    --rgb-info-4: #5a6f8f66; /* acero */
+    --rgb-light-4: #f2e9dc66; /* mármol */
+    --rgb-dark-4: #0c0b0b66; /* obsidiana */
+    --rgb-night-4: #1a1f2866;
+
+    --rgb-primary-8: #8b1e1ecc; /* rojo imperial */
+    --rgb-secondary-8:#6f5b3ecc; /* bronce */
+    --rgb-danger-8: #b3261ecc; /* sangre */
+    --rgb-success-8: #4a7a3ccc; /* victoria */
+    --rgb-info-8: #5a6f8fcc; /* acero */
+    --rgb-light-8: #f2e9dccc; /* mármol */
+    --rgb-dark-8: #0c0b0bcc; /* obsidiana */
+    --rgb-night-8: #1a1f28cc;
 
     --color-muted: #6b6256;
     --color-heading: #1a1616;

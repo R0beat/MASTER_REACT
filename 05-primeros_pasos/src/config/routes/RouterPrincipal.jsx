@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useSelector } from "react-redux";
-
-import { Conceptos } from "../../modules/REACT/pages/Conceptos";
 import { Plantilla } from "../../pages/Plantilla";
-import { Layout } from "../../components";
+import { Layout, Loading } from "../../components";
 import { Home, NotFound } from "../../pages";
-import { Blogs } from "../../modules/BLOG/pages/Blogs";
-import { Eventos } from "../../modules/REACT/pages/Eventos";
+import { Hooks } from "../../modules/REACT/Hooks";
+import { Eventos } from "../../modules/REACT/Eventos";
+import { Blog } from "../../modules/Blog";
+import { Peliculas } from "../../modules/Peliculas";
 
 const THEMES = {
     "0": "/assets/css/florencia/style.css",
@@ -15,8 +15,30 @@ const THEMES = {
     "2": "/assets/css/venecia/style.css",
 };
 
+const RUTAS = [
+    { ruta: "/", nombreRuta: "Inicio" },
+    {
+        ruta: '',
+        nombreRuta: 'Ejemplos',
+        submenus: [
+            { ruta: '/blog', nombreRuta: 'Blog' },
+            { ruta: '/peliculas', nombreRuta: 'Peliculas' },
+        ],
+    },
+    { ruta: "/plantilla", nombreRuta: "Plantilla" },
+    {
+        ruta: '',
+        nombreRuta: 'REACT',
+        submenus: [
+            { ruta: '/eventos', nombreRuta: 'Eventos' },
+            { ruta: '/hooks', nombreRuta: 'Hooks' },
+        ],
+    },
+];
+
 export const RouterPrincipal = () => {
     const { styleApp } = useSelector(state => state.system);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         let link = document.getElementById("theme-style");
@@ -31,23 +53,35 @@ export const RouterPrincipal = () => {
         link.href = THEMES[styleApp] ?? THEMES["0"];
     }, [styleApp]);
 
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 2000);
+    }, []);
+
     return (
-        <BrowserRouter>
-            <Routes>
+        <>
+            <Loading isLoading={loading} />
+            {
+                !loading && (
+                    <BrowserRouter>
+                        <Routes>
 
-                {/* Rutas con Layout */}
-                <Route element={<Layout />}>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/react" element={<Conceptos />} />
-                    <Route path="/plantilla" element={<Plantilla />} />
-                    <Route path="/blogs" element={<Blogs />} />
-                    <Route path="/eventos" element={<Eventos />} />
-                </Route>
+                            {/* Rutas con Layout */}
+                            <Route element={<Layout rutas={RUTAS} />}>
+                                <Route path="/" element={<Home />} />
+                                <Route path="/plantilla" element={<Plantilla />} />
+                                <Route path="/blog" element={<Blog/>} />
+                                <Route path="/eventos" element={<Eventos />} />
+                                <Route path="/hooks" element={<Hooks />} />
+                                <Route path="/peliculas" element={<Peliculas />} />
+                            </Route>
 
-                {/* Rutas sin Layout */}
-                <Route path="*" element={<NotFound />} />
+                            {/* Rutas sin Layout */}
+                            <Route path="*" element={<NotFound />} />
 
-            </Routes>
-        </BrowserRouter>
+                        </Routes>
+                    </BrowserRouter>
+                )
+            }
+        </>
     );
 };

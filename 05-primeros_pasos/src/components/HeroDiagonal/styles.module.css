@@ -218,8 +218,8 @@
 
     .left {
         background: linear-gradient(180deg,
-                #8b1e1e 0%,
-                #0c0b0b 100%);
+                var(--primary) 0%,
+                var(--night) 100%);
         padding: 60px 30px;
     }
 

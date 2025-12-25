@@ -4,6 +4,7 @@ import { store } from './store/store.js';
 import { RouterPrincipal } from "./routes/RouterPrincipal";
 
 const App = () => {
+    
     return (
         <Provider store={store}>
             <RouterPrincipal />

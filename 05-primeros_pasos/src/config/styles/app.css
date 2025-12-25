@@ -18,7 +18,7 @@
 
 body {
   background: var(--night);
-  background: linear-gradient(360deg,var(--rgb-night) 0%, var(--rgb-primary) 100%);
+  background: linear-gradient(360deg,var(--rgb-night-4) 0%, var(--rgb-primary-4) 100%);
   color: var(--night);
   font-family: var(--fuente);
   font-size: var(--font-size);
@@ -114,17 +114,24 @@ hr {
   margin-bottom: 3rem;
 }
 
-/* GRID BASE – MOBILE FIRST */
-.d-grid { display: grid; }
-.gap-1 { gap: 0.25rem; }
-.gap-2 { gap: 0.5rem; }
-.gap-3 { gap: 0.75rem; }
-
+/* IMG */
 .img-fluid {
 max-width: 100%;
 height: auto;
 display: block;
 }
+
+/* GAP */
+.gap-1 { gap: 0.25rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+
+/* GRID BASE – MOBILE FIRST */
+.d-grid { display: grid; }
+
+.justify-items-center{justify-items: center}
+
+.place-items-center{place-items: center;}
 
 /* Columnas base (mobile) */
 .col-1  { grid-template-columns: repeat(1, 1fr); }
@@ -188,12 +195,29 @@ h6 { font-size: 0.9rem; }
 .flex-column { flex-direction: column; }
 .flex-column-reverse { flex-direction: column-reverse; }
 
+.align-content-start { align-content: start; }
+.align-content-end { align-content: end; }
+.align-content-baseline { align-content: baseline; }
+.align-content-normal { align-content: normal; }
+.align-content-center { align-content: center; }
+
+.justify-content-baseline { justify-content:baseline; }
+.justify-content-start { justify-content: start; }
+.justify-content-center { justify-content: center; }
+.justify-content-end { justify-content: end; }
+.justify-content-stretch { justify-content: stretch; }
+
 .align-self-start { align-self: flex-start; }
 .align-self-end { align-self: flex-end; }
+.align-self-baseline { align-self: baseline; }
+.align-self-normal { align-self: normal; }
+.align-self-center { align-self: center; }
+
 .justify-self-auto { justify-self: auto; }
 .justify-self-start { justify-self: start; }
 .justify-self-center { justify-self: center; }
 .justify-self-end { justify-self: end; }
+.justify-self-stretch { justify-self: stretch; }
 .justify-self-stretch { justify-self: stretch; }
 
 /* COLOR UTILITIES */

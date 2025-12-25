@@ -26,14 +26,23 @@
     --dark: #060b0f; /* abismo */
     --night: #1a1f28;
 
-    --rgb-primary: #1e6f7866; /* agua */
-    --rgb-secondary:#7a8f8c66; /* niebla */
-    --rgb-danger: #8a2f2f66; /* óxido */
-    --rgb-success: #2f7a6766; /* laguna */
-    --rgb-info: #4aa3a866; /* cristal */
-    --rgb-light: #e8f1f266; /* perla */
-    --rgb-dark: #060b0f66; /* abismo */
-    --rgb-night: #1a1f2866;
+    --rgb-primary-4: #1e6f7866; /* agua */
+    --rgb-secondary-4:#7a8f8c66; /* niebla */
+    --rgb-danger-4: #8a2f2f66; /* óxido */
+    --rgb-success-4: #2f7a6766; /* laguna */
+    --rgb-info-4: #4aa3a866; /* cristal */
+    --rgb-light-4: #e8f1f266; /* perla */
+    --rgb-dark-4: #060b0f66; /* abismo */
+    --rgb-night-4: #1a1f2866;
+
+    --rgb-primary-8: #1e6f78cc; /* agua */
+    --rgb-secondary-8:#7a8f8ccc; /* niebla */
+    --rgb-danger-8: #8a2f2fcc; /* óxido */
+    --rgb-success-8: #2f7a67cc; /* laguna */
+    --rgb-info-8: #4aa3a8cc; /* cristal */
+    --rgb-light-8: #e8f1f2cc; /* perla */
+    --rgb-dark-8: #060b0fcc; /* abismo */
+    --rgb-night-8: #1a1f28cc;
     
     --color-muted: #6c6f75;
     --color-heading: #121417;

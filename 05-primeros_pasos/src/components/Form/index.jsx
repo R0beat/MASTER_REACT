@@ -28,6 +28,7 @@ export const Input = ({
     listItems = [],
     listItemNameKey = '',
     listItemNameValue = '',
+    placeholder='',
     onFocus=null,
     onBlur=null,
     onChange = () => { }
@@ -44,7 +45,7 @@ export const Input = ({
         onFocus,
         onBlur,
         disabled,
-        placeholder: ' ',
+        placeholder,
         className: Styles.form__input
     };
 

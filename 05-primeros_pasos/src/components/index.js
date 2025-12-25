@@ -9,6 +9,7 @@ export * from './Form';
 export * from './Header';
 export * from './Hero';
 export * from './Layout';
+export * from './Loading';
 export * from './Navbar';
 export * from './Parallax';
 export * from './Section';

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
-import { Button, Card, CardBlog, Hero, Input } from '../../../../components';
-import { handleChangeGeneralInputs } from '../../../../utils/formularios';
+import { Button, Card, Hero, Input } from '../../../components';
+import { handleChangeGeneralInputs } from '../../../utils/formularios';
 
 const nombre = 'Roberto';
 

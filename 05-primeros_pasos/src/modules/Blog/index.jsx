@@ -1,11 +1,11 @@
 import React from 'react';
-import { Button, Card, CardBlog, Hero, Section } from '../../../../components';
+import { Button, Card, CardBlog, Hero, Section } from '../../components';
 import { Link } from 'react-router-dom';
 import Styles from './styles.module.css';
-import { HeroDiagonal } from '../../../../components/HeroDiagonal';
+import { HeroDiagonal } from '../../components/HeroDiagonal';
 
 
-export const Blogs = () => {
+export const Blog = () => {
     return (
         <div className='container d-grid col-12 gap-3'>
             <CardBlog
