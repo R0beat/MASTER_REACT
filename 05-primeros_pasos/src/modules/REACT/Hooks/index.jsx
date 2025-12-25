@@ -60,7 +60,7 @@ export const Hooks = () => {
 
     const [nombre, setNombre] = useState('Michael L. Simon');
     const [valores, setValores] = useState('');
-    const [anio, setAnio] = useState(year);
+    const [usuario, setUsuario] = useState('Michael L. Simon');
 
     const cambiarNombre = (e) => {
         setNombre('Kimberly S. Brooks')
@@ -70,6 +70,10 @@ export const Hooks = () => {
         const { value } = e.target;
         setValor(value);
     };
+
+    const modificarNombre=()=>{
+
+    }
 
     return (
         <>
@@ -128,8 +132,26 @@ export const Hooks = () => {
                     </div>
 
                     <div className="span-12 span-md-4">
-                        <EjemploAnio anio={anio} />
+                        <EjemploAnio anio={year} />
                     </div>
+                </Card>
+
+                <Card className={'span-12 d-grid col-12 gap-2'}>
+
+                    <div className="span-12">
+                        <h2>useEffect</h2>
+                        <hr className='hr-header' />
+                        <p className='mb-1'>Es un Hook que permite a los componentes funcionales tener estado, es decir, manejar datos que cambian con el tiempo y que, al modificarse, provocan que el componente se vuelva a renderizar para reflejar esos cambios en la interfaz de usuario (UI).</p>
+                        <p className='m-1'>Ejemplos:</p>
+                    </div>
+
+                    <div className="span-12 span-md-6">
+                        <BloqueCodigo code={ejemplo1} language='jsx' theme='dracula' />
+                        <p className='mt-2 mb-2'>{nombre}</p>
+                        <Button onClick={modificarNombre}  >Cambiar</Button>
+                    </div>
+
+                
                 </Card>
 
             </div>

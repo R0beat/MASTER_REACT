@@ -185,6 +185,15 @@ h6 { font-size: 0.9rem; }
 .display-2 { font-weight: 700; font-size: 54px; }
 .display-3 { font-weight: 700; font-size: 44px; }
 
+.text-primary{color: var(--primary);}
+.text-secondary{color: var(--secondary);}
+.text-danger{color: var(--danger);}
+.text-success{color: var(--success);}
+.text-info{color: var(--info);}
+.text-light{color: var(--light);}
+.text-dark{color: var(--dark);}
+.text-night{color: var(--night);}
+
 .upper-case { text-transform: uppercase; }
 
 /* FLEX UTILITIES */
