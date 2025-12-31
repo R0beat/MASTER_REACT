@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: #0f172a;
+    background: var(--info);
     z-index: 1000;
 }
 
@@ -19,19 +19,19 @@
 
 /* ================= LOGO ================= */
 .header__logo a {
-    color: var(--rgb-primary-4);
+    color: var(--rgb-info-4);
     font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
 }
 
 .color--logo {
-    color: var(--primary);
+    color: var(--info);
     border-radius: 50%;
-    background-image: linear-gradient( var(--rgb-night-8),var(--border-primary));
+    background-image: linear-gradient( var(--rgb-dark-8),var(--border-info));
     font-size: 40px;
     padding: 2px;
-    box-shadow: 0 5px 19px var(--rgb-primary-8);
+    box-shadow: 0 5px 19px var(--rgb-info-8);
 }
 
 /* ================= TOGGLE ================= */
@@ -53,7 +53,7 @@
     margin-top: -5px;
     left: 0;
     width: 100%;
-    background: var(--rgb-primary-8);
+    background: var(--rgb-night-6);
     transform: translatex(-120%);
     transition: transform 0.3s ease;
     height: 100vh;
@@ -86,9 +86,9 @@
     gap: 0.35rem;
     border-bottom: 1px solid transparent;
     padding: 0.5rem 0;
-    color: var(--rgb-primary-8);
+    color: var(--light);
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1;
     cursor: pointer;
     transition: color 0.2s ease, background 0.2s ease;
@@ -96,13 +96,13 @@
 
 /* ===== HOVER SUTIL PARA TODOS ===== */
 .nav__link:hover {
-    color: var(--bg-alert-primary);
-    border-bottom: 1px solid var(--border-primary);
+    color: var(--bg-alert-info);
+    border-bottom: 1px solid var(--border-info);
 }
 
 /* ===== FOCUS (accesibilidad) ===== */
 .nav__link:focus-visible {
-    outline: 2px solid #38bdf8;
+    outline: 2px solid var(--info);
     outline-offset: 2px;
 }
 
@@ -123,8 +123,8 @@
     list-style: none;
     margin: 0;
     padding: 0.5rem 0.75rem;
-    color: var(--rgb-primary-4);
-    background: var(--rgb-secondary-8);
+    color: var(--rgb-info-4);
+    background: var(--rgb-info-8);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
     max-height: 0;
     opacity: 0;
@@ -152,7 +152,7 @@
 
 /* ===== HOVER SUTIL SUBMENU ===== */
 .submenu__link:hover {
-    color: var(--danger);
+    color: var(--primary);
 }
 
 /* ================= DESKTOP ================= */

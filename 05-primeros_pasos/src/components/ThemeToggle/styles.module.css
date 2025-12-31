@@ -11,7 +11,7 @@
     font-size: 0.75rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--bg-alert-primary);
+    color: var(--bg-alert-info);
 }
 
 /* contenedor del select */
@@ -24,7 +24,7 @@
 .ac-select {
     width: 100%;
     padding: 10px 14px;
-    background: rgba(15, 18, 22, 0.9);
+    background: var(--border-info);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 6px;
     color: #e5e5e5;
@@ -43,13 +43,13 @@
 
 /* hover */
 .ac-select:hover {
-    border-color: var(--rgb-primary);
+    border-color: var(--rgb-info);
 }
 
 /* focus tipo Animus */
 .ac-select:focus {
-    border-color: var(--border-primary);
-    box-shadow: 0 0 0 1px var(--rgb-primary);
+    border-color: var(--border-info);
+    box-shadow: 0 0 0 1px var(--rgb-info);
 }
 
 /* flecha personalizada */
@@ -59,13 +59,13 @@
     right: 14px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--primary);
+    color: var(--info);
     pointer-events: none;
     font-size: 0.8rem;
 }
 
 /* opciones */
 .ac-select-option {
-    background: #0f1216;
-    color: #e5e5e5;
+    background: var(--dark);
+    color: var(--light);
 }

@@ -16,13 +16,9 @@ export const HeroDiagonal = ({
             <div className={Styles.left}>
                 <span className={Styles.badge}></span>
                 <h1 className={Styles.title}>{title}</h1>
-
                 <p className={Styles.text}>{text}</p>
-
-                <Button variant='primary'>
-                    <Link to={to}>
-                        {button}
-                    </Link>
+                <Button variant='info'>
+                    <Link to={to}>{button}</Link>
                 </Button>
             </div>
 

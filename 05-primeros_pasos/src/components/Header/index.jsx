@@ -1,11 +1,10 @@
 import React from 'react'
-import './styles.css'
 import { Navbar } from '../Navbar'
 
-export const Header = ({ rutas = [] }) => {
+export const Header = ({ rutas = [], themes=[] }) => {
     return (
         <header>
-            <Navbar rutas={rutas} />
+            <Navbar rutas={rutas} themes={themes} />
         </header>
     )
 }

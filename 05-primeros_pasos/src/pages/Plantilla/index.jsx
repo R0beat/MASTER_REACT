@@ -42,16 +42,16 @@ export const Plantilla = () => {
             </div>
 
             <div className="span-12 span-md-3"><Button>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-primary'>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-secondary'>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-success'>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-info'>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-danger'>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-primary-outline'>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-secondary-outline'>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-success-outline'>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-info-outline'>Button</Button></div>
-            <div className="span-12 span-md-3"><Button variant='btn-danger-outline'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='primary'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='secondary'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='success'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='info'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='danger'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='primary-outline'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='secondary-outline'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='success-outline'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='info-outline'>Button</Button></div>
+            <div className="span-12 span-md-3"><Button variant='danger-outline'>Button</Button></div>
 
 
             <div className="span-12 span-md-3"><ToggleButton /></div>

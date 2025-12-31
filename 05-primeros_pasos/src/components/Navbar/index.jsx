@@ -6,7 +6,7 @@ import { MdOutlineArrowDropDown } from "react-icons/md";
 import { ThemeToggle } from '../ThemeToggle';
 import { GiFire } from "react-icons/gi";
 
-export function Navbar({ rutas = [], logo = 'LOGO' }) {
+export function Navbar({ rutas = [], logo = 'LOGO',themes=[] }) {
     const [menuOpen, setMenuOpen] = useState(false);
     const [submenuOpen, setSubmenuOpen] = useState(null);
 
@@ -65,7 +65,7 @@ export function Navbar({ rutas = [], logo = 'LOGO' }) {
                         ))}
                     </ul>
                 </nav>
-                <ThemeToggle />
+                <ThemeToggle themes={themes}/>
             </div>
         </header>
     );

@@ -4,11 +4,11 @@ import { Header } from '../Header'
 import { Footer } from '../Footer'
 import './styles.css';
 
-export const Layout = ({ rutas = [] }) => {
+export const Layout = ({ rutas = [], themes=[] }) => {
 
     return (
         <>
-            <Header rutas={rutas} />
+            <Header rutas={rutas} themes={themes}/>
             <main>
                 <Outlet />
             </main>

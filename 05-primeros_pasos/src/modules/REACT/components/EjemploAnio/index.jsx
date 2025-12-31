@@ -7,7 +7,7 @@ export const EjemploAnio = ({ anio }) => {
 
     const handleChange = (e, setValor) => {
         const { value } = e.target;
-        setValor(value);
+        setValor(Number(value));
     };
 
     const cambiarAnio = (yearNow) => {

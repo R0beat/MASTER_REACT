@@ -49,9 +49,9 @@ export const Eventos = () => {
                     funciones que se ejecutarán en respuesta a interacciones como hacer clic, hover, enfocar inputs en formularios, entre otras.
                 </p>
             </Hero>
-            <div className="container d-grid col-12 gap-3">
+            <div className="container d-grid col-12 gap-3 ">
 
-                <Card className={'span-12 span-md-4'}>
+                <Card className={'span-12 span-md-4 mb-2'}>
                     <h3>Evento onClick</h3>
                     <hr className='hr-header' />
                     <div className='d-grid col-12 gap-2'>
@@ -66,7 +66,7 @@ export const Eventos = () => {
                     </div>
                 </Card>
 
-                <Card className={'span-12 span-md-4'}>
+                <Card className={'span-12 span-md-4 mb-2'}>
                     <div onMouseEnter={e => enterAndLeave(e, setMensajeCaja, 'entrado')} onMouseLeave={e => enterAndLeave(e, setMensajeCaja, 'salido')}>
                         <h3>Evento Mouse enter-leave</h3>
                         <hr className='hr-header' />
@@ -75,7 +75,7 @@ export const Eventos = () => {
                     </div>
                 </Card>
 
-                <Card className={'span-12 span-md-4'}>
+                <Card className={'span-12 span-md-4 mb-2'}>
                     <h3>Evento on Focus</h3>
                     <hr className='hr-header' />
                     <Input

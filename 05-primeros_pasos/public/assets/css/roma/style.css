@@ -1,28 +1,13 @@
 :root {
-    --radius: 0.5rem;
-    --fuente: "Quicksand", sans-serif;
-    --fuente-titulo: "PT Serif", serif;
-    --ancho-contenedor: 1600px;
-    --font-size: 16px;
-
-    --letter-spacing: 3px;
-    --fw-100: 100;
-    --fw-200: 200;
-    --fw-300: 300;
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-600: 600;
-    --fw-700: 700;
-
-    --bg-main: #0c0b0b;
-    --bg-surface: #151010;
+    --bg-main: #2d2c2c;
+    --bg-surface: #353030;
 
     --primary: #8b1e1e; /* rojo imperial */
     --secondary:#6f5b3e; /* bronce */
     --danger: #b3261e; /* sangre */
     --success: #4a7a3c; /* victoria */
     --info: #5a6f8f; /* acero */
-    --light: #f2e9dc; /* mármol */
+    --light: #e3c6a1; /* mármol */
     --dark: #0c0b0b; /* obsidiana */
     --night: #1a1f28;
 
@@ -31,20 +16,29 @@
     --rgb-danger-4: #b3261e66; /* sangre */
     --rgb-success-4: #4a7a3c66; /* victoria */
     --rgb-info-4: #5a6f8f66; /* acero */
-    --rgb-light-4: #f2e9dc66; /* mármol */
+    --rgb-light-4: #e3c6a166; /* mármol */
     --rgb-dark-4: #0c0b0b66; /* obsidiana */
     --rgb-night-4: #1a1f2866;
+
+    --rgb-primary-6: #8b1e1e99; /* rojo imperial */
+    --rgb-secondary-6:#6f5b3e99; /* bronce */
+    --rgb-danger-6: #b3261e99; /* sangre */
+    --rgb-success-6: #6a7a3c99; /* victoria */
+    --rgb-info-6: #5a6f8f99; /* acero */
+    --rgb-light-6: #e3c6a199; /* mármol */
+    --rgb-dark-6: #0c0b0b99; /* obsidiana */
+    --rgb-night-6: #1a1f2899;
 
     --rgb-primary-8: #8b1e1ecc; /* rojo imperial */
     --rgb-secondary-8:#6f5b3ecc; /* bronce */
     --rgb-danger-8: #b3261ecc; /* sangre */
     --rgb-success-8: #4a7a3ccc; /* victoria */
     --rgb-info-8: #5a6f8fcc; /* acero */
-    --rgb-light-8: #f2e9dccc; /* mármol */
+    --rgb-light-8: #e3c6a1cc; /* mármol */
     --rgb-dark-8: #0c0b0bcc; /* obsidiana */
     --rgb-night-8: #1a1f28cc;
 
-    --color-muted: #6b6256;
+    --color-muted: #585b61;
     --color-heading: #1a1616;
     --color-body: #2e2929;
 
@@ -54,15 +48,15 @@
     --border-success: #3b612f;
     --border-info: #495b76;
     --border-light: #ddd2c2;
-    --border-dark: #1a1818;
+    --border-dark: #3a3838;
 
     --border-default: #d0c6b7;
 
-    --bg-primary: #8b1e1e;
-    --bg-secondary: #6f5b3e;
-    --bg-danger: #b3261e;
-    --bg-success: #4a7a3c;
-    --bg-info: #5a6f8f;
+    --bg-primary: #9b2527;
+    --bg-secondary: #85735a;
+    --bg-danger: #c22e29;
+    --bg-success: #558b45;
+    --bg-info: #7789a1;
     --bg-light: #f2e9dc;
     --bg-dark: #0c0b0b;
 
