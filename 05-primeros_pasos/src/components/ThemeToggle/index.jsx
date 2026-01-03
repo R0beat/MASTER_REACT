@@ -10,7 +10,7 @@ export const ThemeToggle = ({ themes = [] }) => {
     const handleChange = (e) => {
         dispatch(setStyleApp(e.target.value));
     };
-    console.log(themes)
+
     return (
         <div className={Styles["ac-theme-toggle"]}>
             <div className={Styles["ac-select-wrapper"]}>

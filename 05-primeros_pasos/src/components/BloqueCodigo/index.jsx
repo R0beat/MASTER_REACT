@@ -17,7 +17,7 @@ const THEMES = {
     materialDark
 };
 
-export const BloqueCodigo = ({ code = '', language = "javascript", theme = 'light', copy = false, className }) => {
+export const BloqueCodigo = ({ code = '', language = "javascript", theme , copy = false, className }) => {
 
     const [copied, setCopied] = useState(false);
 

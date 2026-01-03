@@ -1,0 +1,116 @@
+/* ===== BLOQUE ===== */
+.table {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ===== ELEMENTOS ===== */
+.table__content {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 300px;
+}
+
+.table__head {
+    background-color: var(--secondary);
+}
+
+.table__row {
+    border-bottom: 1px solid var(--border-default);
+}
+
+.table__row--head {
+    color: var(--light);
+}
+
+.table__row--striped:nth-child(even) {
+    background-color: var(--bg-alert-secondary);
+}
+
+.table__cell {
+    padding: 12px;
+    text-align: left;
+}
+
+.table__cell--head {
+    font-weight: 600;
+}
+
+.table__cell--empty {
+    text-align: center;
+    padding: 24px;
+    color: var(--danger);
+    background: var(--bg-alert-danger);
+}
+
+.table__actions {
+    display: flex;
+    gap: 8px;
+}
+
+.table__btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.table__btn--edit {
+    background-color: var(--success);
+    color:var(--light);
+}
+
+.table__btn--delete {
+    background-color: var(--danger);
+    color:var(--light);
+}
+
+.table__btn--edit:hover {
+    background-color: var(--border-success);
+    color:var(--bg-alert-success);
+}
+
+.table__btn--delete:hover {
+    background-color: var(--border-danger);
+    color:var(--bg-alert-danger);
+}
+
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    .table__head {
+        display: none;
+    }
+
+    .table__row {
+        display: block;
+        margin-bottom: 16px;
+        border: 1px solid var(--border-default);
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    .table__cell {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid var(--light);
+    }
+
+    .table__cell:last-child {
+        border-bottom: none;
+    }
+
+    .table__cell::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: var(--dark);
+    }
+
+    .table__actions {
+        justify-content: flex-end;
+    }
+}

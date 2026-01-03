@@ -8,6 +8,9 @@ import { Hooks } from "../../modules/REACT/Hooks";
 import { Eventos } from "../../modules/REACT/Eventos";
 import { Blog } from "../../modules/Blog";
 import { Peliculas } from "../../modules/Peliculas";
+import { AjaxComponent } from "../../modules/REACT/AjaxComponent";
+import { AsyncAwait } from "../../modules/REACT/AsyncAwait";
+import { Formularios } from "../../modules/REACT/Formularios";
 
 const THEMES = [
     { clave: "0", tema: "Florencia", ruta: "/assets/css/florencia/style.css" },
@@ -34,6 +37,9 @@ const RUTAS = [
         submenus: [
             { ruta: '/eventos', nombreRuta: 'Eventos' },
             { ruta: '/hooks', nombreRuta: 'Hooks' },
+            { ruta: '/ajax', nombreRuta: 'Ajax' },
+            { ruta: '/async_await', nombreRuta: 'Asincronismo' },
+            { ruta: '/formuarios', nombreRuta: 'Formuarios' },
         ],
     },
 ];
@@ -77,6 +83,9 @@ export const RouterPrincipal = () => {
                                 <Route path="/eventos" element={<Eventos />} />
                                 <Route path="/hooks" element={<Hooks />} />
                                 <Route path="/peliculas" element={<Peliculas />} />
+                                <Route path="/ajax" element={<AjaxComponent />} />
+                                <Route path="/async_await" element={<AsyncAwait />} />
+                                <Route path="/formularios" element={<Formularios />} />
                             </Route>
 
                             {/* Rutas sin Layout */}
