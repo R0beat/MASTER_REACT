@@ -39,7 +39,7 @@ const RUTAS = [
             { ruta: '/hooks', nombreRuta: 'Hooks' },
             { ruta: '/ajax', nombreRuta: 'Ajax' },
             { ruta: '/async_await', nombreRuta: 'Asincronismo' },
-            { ruta: '/formuarios', nombreRuta: 'Formuarios' },
+            { ruta: '/formularios', nombreRuta: 'Formuarios' },
         ],
     },
 ];

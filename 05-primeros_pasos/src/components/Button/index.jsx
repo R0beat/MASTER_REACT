@@ -5,12 +5,12 @@ export const Button = ({ variant = 'default', modifier = '', className = '', typ
 
     return (
         <button
-            className={`${Styles['btn']} ${Styles[`btn-${variant}`]} ${Styles[modifier]} ${expanded && `${Styles['expanded']}`} ${(disabled && `${Styles['disabled']}`)} ${className}`}
+            // className={`${Styles['btn']} ${Styles[`btn-${variant}`]} ${Styles[modifier]} ${expanded && `${Styles['expanded']}`} ${(disabled && `${Styles['disabled']}`)} ${className}`}
+            className={[Styles.btn, Styles[`btn-${variant}`], modifier && Styles[modifier], expanded && Styles.expanded, disabled && Styles.disabled, className].filter(Boolean).join(' ')}
             type={type}
             onClick={onClick}
             onDoubleClick={onDoubleClick}
-            disabled={disabled}
-        >
+            disabled={disabled}>
             {children}
         </button>
     )

@@ -3,7 +3,7 @@
     inset: 0;
     z-index: 9999;
     background: radial-gradient(circle at top,
-            var(--rgb-info-8),
+            var(--rgb-dark-6),
             var(--bg-alert-info));
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@
     font-size: clamp(1.4rem, 5vw, 2rem);
     color: var(--info);
     animation: fire 1.5s infinite ease-in-out;
-    filter: drop-shadow(0 0 10px var(--rgb-info-8));
+    filter: drop-shadow(0 0 10px var(--rgb-dark-8));
 }
 
 /* Animaciones */

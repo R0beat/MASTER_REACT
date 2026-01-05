@@ -1,0 +1,55 @@
+.pelicula {
+    background: var(--rgb-light-4);
+    width: 100%;
+    max-width: 99%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px var(--rgb-night-4);
+    box-sizing: border-box;
+}
+
+/* Título */
+.pelicula__title {
+    text-align: center;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Descripción */
+.pelicula__descripcion {
+    color: var(--dark);
+    font-size: clamp(0.9rem, 2.3vw, 1rem);
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+/* Actions*/
+.pelicula__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Formularios */
+.formGroup {
+    width: 100%;
+}
+
+/* Mobile first */
+@media (max-width: 576px) {
+    .pelicula {
+        padding: 0.75rem;
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px var(--rgb-night-4);
+    }
+
+    .pelicula__actions {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

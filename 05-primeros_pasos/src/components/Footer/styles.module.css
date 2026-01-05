@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    background: linear-gradient(360deg, var(--border-info) 0%, var(--info) 100%);
+    background: linear-gradient(360deg, var(--dark) 0%, var(--rgb-dark-8) 100%);
     color: #d4d4d8;
     overflow: hidden;
 }
@@ -9,7 +9,7 @@
 .footer__overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.15), transparent 60%);
+    background: radial-gradient(circle at top, var(--rgb-dark-4), var(--rgb-dark-8) 60%);
     opacity: 0.08;
     pointer-events: none;
 }
@@ -34,7 +34,7 @@
 
 /* ===== Brand ===== */
 .footer__brand h2 {
-    color: var(--bg-alert-info);
+    color: var(--bg-alert-light);
     letter-spacing: 0.35em;
     font-weight: 500;
 }
@@ -65,7 +65,7 @@
 
 
 .footer__nav-link:hover {
-    color: #ffffff;
+    color: var(--rgb-light-4);
 }
 
 
@@ -74,7 +74,7 @@
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.2em;
-    color: #ffffff;
+    color: var(--rgb-light-4);
 }
 
 
@@ -91,23 +91,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--rgb-dark-4);
     border-radius: 50%;
     font-size: 0.7rem;
-    color: #ffffff;
+    color: var(--rgb-light-4);
     transition: all 0.3s ease;
 }
 
 
 .footer__icon:hover {
-    border-color: var(--info);
-    box-shadow: 0 2px 10px var(--bg-alert-info);
-    color: var(--bg-alert-info);
+    border-color: var(--light);
+    box-shadow: 0 2px 10px var(--rgb-light-4);
+    color: var(--bg-alert-light);
 }
 
 /* Bottom */
 .footer__bottom {
-    border-top: 1px solid var(--bg-alert-info);
+    border-top: 1px solid var(--bg-alert-primary);
     padding: 1.5rem 1rem;
     text-align: center;
     font-size: 0.9rem;
