@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Styles from './styles.module.css';
 import { Alert, Button, Input } from '../../../../components';
+import { guardarEnStorage } from '../../../../utils';
 
-const mensajeCampoRequerido = "El campo es requerido. Por favor ingresa un valor.";
 
-export const CrearPeliculas = ({ valor = {}, setValor }) => {
+export const CrearPeliculas = ({ valor = {}, setValor, setArray, nameLocalStorage }) => {
 
     const [errors, setErrors] = useState({});
     const [showAlert, setShowAlert] = useState(false);
@@ -58,30 +58,31 @@ export const CrearPeliculas = ({ valor = {}, setValor }) => {
         }
 
         if (Object.keys(errores).length === 0) {
+
             const nuevaPelicula = {
-                ...valor,
-                id: new Date().getTime()
+                id: new Date().getTime(),
+                titulo: valor.titulo,
+                descripcion: valor.descripcion
             };
 
-            let elementos = JSON.parse(localStorage.getItem('peliculasStorage')) || [];
+            setArray(prev => {
+                const nuevo = [...prev, nuevaPelicula];
+                guardarEnStorage(nameLocalStorage, nuevo);
+                return nuevo;
+            });
 
-            !Array.isArray(elementos) ? elementos = [] : elementos.push(nuevaPelicula);
-
-            localStorage.setItem('peliculasStorage', JSON.stringify(elementos));
-
-            setValor({}); // limpiar formulario
-            setErrors({});
-            console.log(elementos)
+            setValor({ titulo: '', descripcion: '' });
         }
+
 
     };
 
     return (
         <article className={`${Styles.pelicula} span-3`}>
-            <h3 className={Styles.pelicula__title}>Añadir película</h3>
+            <h3 className={Styles.pelicula__title}>Añadir pel&#237;cula</h3>
 
             <p className='text-info text-center f-bold'>
-                {(valor?.titulo && valor?.descripcion) && `Has creado la película ${valor.titulo}`}
+                {(valor.titulo && valor.descripcion) && `Has creado la película ${valor.titulo}`}
             </p>
 
             <hr />
@@ -111,7 +112,7 @@ export const CrearPeliculas = ({ valor = {}, setValor }) => {
                     </Alert>
                 </div>
             )}
-            <Button onClick={enviarFormulario} variant="success"> Guardar </Button>
+            <Button type='button' onClick={enviarFormulario} variant="success"> Guardar </Button>
         </article>
     );
 };

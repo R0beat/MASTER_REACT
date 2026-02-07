@@ -2,6 +2,7 @@
     background: var(--rgb-light-4);
     width: 100%;
     max-width: 99%;
+    max-height: 300px;
     height: auto;
     padding: 1rem;
     border-radius: 6px;

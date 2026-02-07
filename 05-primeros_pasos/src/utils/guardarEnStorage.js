@@ -1,10 +1,3 @@
-export const GuardarEnStorage = (elemento, item) => {
+export const guardarEnStorage = (key, data) => { localStorage.setItem(key, JSON.stringify(data)); };
 
-    let elementos = JSON.parse(localStorage.getItem(item))
-
-    Array.isArray(elementos) ? elementos.push(elemento) : elementos = [elemento]
-
-    localStorage.setItem(item, JSON.stringify(elementos));
-
-    return elemento
-}
+export const obtenerLocalStorage = (key) => { return JSON.parse(localStorage.getItem(key)) || []; };
