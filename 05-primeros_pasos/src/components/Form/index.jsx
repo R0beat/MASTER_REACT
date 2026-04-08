@@ -28,9 +28,9 @@ export const Input = ({
     listItems = [],
     listItemNameKey = '',
     listItemNameValue = '',
-    placeholder='',
-    onFocus=null,
-    onBlur=null,
+    placeholder = '',
+    onFocus = null,
+    onBlur = null,
     onChange = () => { }
 }) => {
     const fieldClass = `
@@ -45,7 +45,7 @@ export const Input = ({
         onFocus,
         onBlur,
         disabled,
-        placeholder,
+        ...(type !== "color" && { placeholder }),
         className: Styles.form__input
     };
 
@@ -87,6 +87,16 @@ export const Input = ({
                         />{' '}
                         {label}
                     </label>
+                );
+
+            case 'color':
+                return (
+                    <input
+                        {...commonProps}
+                        type="color"
+                        value={value || "#000000"}
+                        className={`${Styles.form__input} ${Styles.form__color}`}
+                    />
                 );
 
             default:
