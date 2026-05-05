@@ -11,6 +11,7 @@ import { Peliculas } from "../../modules/Peliculas";
 import { AjaxComponent } from "../../modules/REACT/AjaxComponent";
 import { AsyncAwait } from "../../modules/REACT/AsyncAwait";
 import { Formularios } from "../../modules/REACT/Formularios";
+import { QRCode } from "../../modules/Tools/QRCode";
 
 const THEMES = [
     { clave: "0", tema: "Florencia", ruta: "/assets/css/florencia/style.css" },
@@ -42,6 +43,13 @@ const RUTAS = [
             { ruta: '/formularios', nombreRuta: 'Formuarios' },
         ],
     },
+    {
+        ruta: '',
+        nombreRuta: 'TOOLS',
+        submenus: [
+            { ruta: '/generar_QR', nombreRuta: 'Crear QR' },
+        ],
+    }
 ];
 
 export const RouterPrincipal = () => {
@@ -86,6 +94,7 @@ export const RouterPrincipal = () => {
                                 <Route path="/ajax" element={<AjaxComponent />} />
                                 <Route path="/async_await" element={<AsyncAwait />} />
                                 <Route path="/formularios" element={<Formularios />} />
+                                <Route path="/generar_QR" element={<QRCode />} />
                             </Route>
 
                             {/* Rutas sin Layout */}

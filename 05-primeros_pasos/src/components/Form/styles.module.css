@@ -181,3 +181,9 @@
     border-radius: var(--radius);
     color: var(--danger);
 }
+
+.form__color {
+  padding: 4px;
+  height: 40px;
+  cursor: pointer;
+}
