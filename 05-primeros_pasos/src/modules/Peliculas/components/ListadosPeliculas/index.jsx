@@ -1,9 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Styles from './styles.module.css';
 import { Alert, Button } from '../../../../components';
 import { guardarEnStorage, obtenerLocalStorage } from '../../../../utils/guardarEnStorage';
+import { ModalEdicion } from '../ModalEdicion';
 
 export const ListadoPeliculas = ({ className, valor = [], setValor, nameLocalStorage }) => {
+
+    const [editar, setEditar] = useState(0);
+    const [mostarForm, setMostrarForm] = useState(false)
 
     useEffect(() => {
         const peliculas = JSON.parse(localStorage.getItem(nameLocalStorage)) || [];
@@ -31,22 +35,44 @@ export const ListadoPeliculas = ({ className, valor = [], setValor, nameLocalSto
         });
     }
 
+    const editarPelicula = (id) => {
+        setEditar(id)
+        setMostrarForm(true)
+    }
+
     return (
-        <div className='span-12'>
+        <div className='d-grid col-12 gap-2' >
+
             {valor.length > 0 ? (
                 valor.map((elemento, index) => (
+
                     <article className={`${Styles.pelicula} ${className}`} key={index}>
                         <h3 className={Styles.pelicula__title}>{elemento.titulo}</h3>
                         <hr />
                         <p className={Styles.pelicula__descripcion}>{elemento.descripcion}</p>
                         <div className={Styles.pelicula__actions}>
                             <Button variant="danger" onClick={() => borrarPelicula(elemento.id)} >Eliminar</Button>
-                            <Button variant="info">Editar</Button>
+                            <Button variant="info" onClick={() => editarPelicula(elemento.id)}>Editar</Button>
                         </div>
+                        {
+                            editar === elemento.id && (
+                                mostarForm && (
+                                    <ModalEdicion
+                                        setValor={setValor}
+                                        nameLocalStorage={nameLocalStorage}
+                                        elemento={elemento}
+                                        onClose={() => {
+                                            setMostrarForm(false);
+                                            setEditar(0);
+                                        }}
+                                    />
+                                )
+                            )
+                        }
                     </article>
                 ))
             ) : (
-                <Alert variant="secondary">
+                <Alert className={'span-12'} variant="secondary">
                     No existen datos
                 </Alert>
             )}

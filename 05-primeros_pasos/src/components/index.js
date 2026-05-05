@@ -12,6 +12,7 @@ export * from './HeroDiagonal';
 export * from './Layout';
 export * from './LoaderSpinner';
 export * from './Loading';
+export * from './Modal';
 export * from './Navbar';
 export * from './Parallax';
 export * from './Section';

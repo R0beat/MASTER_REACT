@@ -1,11 +1,10 @@
 .pelicula {
     background: var(--rgb-light-4);
     width: 100%;
-    max-width: 99%;
     height: auto;
     padding: 1rem;
     border-radius: 6px;
-    box-shadow: 1px 1px 5px var(--rgb-night-4);
+    border: 0.5px var(--color-muted);
     box-sizing: border-box;
 }
 
